@@ -1,0 +1,57 @@
+# =========================
+# Virtual Environments
+# =========================
+venv/
+.venv/
+env/
+.env/
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# Django
+# =========================
+db.sqlite3
+*.log
+local_settings.py
+
+# Migrations (keep these!)
+!**/migrations/
+**/migrations/__pycache__/
+
+# =========================
+# Static & Media
+# =========================
+staticfiles/
+media/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Test / Coverage
+# =========================
+htmlcov/
+.coverage
+.tox/
+.pytest_cache/
+
+# =========================
+# Build / Packaging
+# =========================
+build/
+dist/
+*.egg-info/
