@@ -56,3 +56,25 @@ Core views now retrieve Feature records from the database and display them dynam
 
 This setup establishes a solid foundation for building data-driven functionality within the Django-In-Action project.
 
+## Django Templates – Context Variables
+
+This update extends the Core application by introducing Django context variables and validating dynamic data rendering in HTML templates.
+
+### What Was Implemented
+- Added a new template to demonstrate context-based rendering
+- Passed context data from a Django view to an HTML template
+- Rendered dynamic values in the template using Django template syntax
+- Introduced a dedicated URL endpoint to validate context handling
+
+### Key Concepts Demonstrated
+- Usage of Django’s `render()` shortcut to bind context data to templates
+- Accessing context variables in templates using `{{ }}` syntax
+- Separation of concerns between views (data preparation) and templates (presentation)
+
+### Example
+A context dictionary is defined in the view and passed to the template:
+
+```python
+context = {
+    'context_placeholder': 'This is being fetched via a Context variable in HTML Template'
+}
