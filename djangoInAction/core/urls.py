@@ -4,4 +4,5 @@ urlpatterns = [
     path('', views.core_home),
     path('first-app/', views.first_view),
     path('context/', views.context_template),
+    path('tailwind-preview', views.tailwind)
 ]
