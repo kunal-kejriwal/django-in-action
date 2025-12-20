@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Feature
+from .forms import FeatureForm
 # Create your views here.
 
 def core_home(request):
@@ -27,3 +28,10 @@ def context_template(request):
 
 def tailwind(request):
     return render(request, 'core/tailwind.html')
+
+def create_feature(request):
+    form = FeatureForm
+    context = {
+        'form' : form
+    }
+    return render(request, 'core/feature-form.html', context)
