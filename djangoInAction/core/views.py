@@ -24,3 +24,6 @@ def context_template(request):
     }
     
     return render(request, 'core/context-template.html', context)
+
+def tailwind(request):
+    return render(request, 'core/tailwind.html')
